@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home: Super Duper Drive</title>
+</head>
+<body>
+<h1>This is Super Duper Drive</h1>
+
+<form th:object="${newMessage}" th:action="@{/home}" action="#" method="POST">
+    <input th:field="*{text}" type="text">
+    <input type="submit">
+</form>
+
+<p th:each="greet : ${greetings}" th:unless="${greet.contains('more')}" th:text="${greet}"></p>
+
+<p>
+    Store information on the web
+</p>
+</body>
+</html>
