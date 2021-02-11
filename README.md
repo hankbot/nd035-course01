@@ -1,5 +1,5 @@
 # nd035-course01
-Project: SuperDuperDrive
+UDACITY NANODEGREE: Java Web Developer | Project: SuperDuperDrive
 
 In this project, students will use the skills acquired in the first course to build a web-based personal storage application: SuperDuperDrive!
 
