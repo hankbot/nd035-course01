@@ -24,13 +24,13 @@ public class HomeController {
     model.addAttribute("greetings", messageService.getMessages());
     return "home";
   }
-
-  @PostMapping("/home")
-  public String addMessage(@ModelAttribute("newMessage") MessageForm newMessage, Model model) {
-    messageService.addMessage(newMessage.getText());
-    model.addAttribute("greetings", messageService.getMessages());
-    newMessage.setText("");
-    return "home";
-  }
+//
+//  @PostMapping("/home")
+//  public String addMessage(@ModelAttribute("newMessage") MessageForm newMessage, Model model) {
+//    messageService.addMessage(newMessage.getText());
+//    model.addAttribute("greetings", messageService.getMessages());
+//    newMessage.setText("");
+//    return "home";
+//  }
 
 }

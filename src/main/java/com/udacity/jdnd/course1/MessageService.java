@@ -9,13 +9,13 @@ import java.util.List;
 @Service
 public class MessageService {
 
-  List<String> messages;
+  List<String[]> messages;
 
-  public List<String> getMessages() {
+  public List<String[]> getMessages() {
     return new ArrayList<>(messages);
   }
 
-  public void addMessage(String message) {
+  public void addMessage(String[] message) {
     messages.add(message);
   }
 

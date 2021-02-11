@@ -2,14 +2,23 @@ package com.udacity.jdnd.course1;
 
 public class MessageForm {
 
-  public String getText() {
-    return text;
+  private String animalName;
+  private String adjective;
+
+  public String getAnimalName() {
+    return animalName;
   }
 
-  public void setText(String text) {
-    this.text = text;
+  public void setAnimalName(String animalName) {
+    this.animalName = animalName;
   }
 
-  private String text;
+  public String getAdjective() {
+    return adjective;
+  }
+
+  public void setAdjective(String adjective) {
+    this.adjective = adjective;
+  }
 
 }

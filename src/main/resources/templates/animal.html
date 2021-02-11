@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home: Super Duper Drive</title>
+</head>
+<body>
+<h1>This is Super Duper Drive</h1>
+
+<form th:object="${newMessage}" th:action="@{/animal}"action="#" method="POST">
+    <label for="animalText">Enter an Animal: </label>
+    <input type="text" id="animalText" name="animalText" th:field="*{animalName}">
+    <label for="adjective">Enter an Adjective:</label>
+    <input type="text" id="adjective" name="adjective" th:field="*{adjective}">
+    <input type="submit">
+</form>
+<h1 th:if="${#lists.size(greetings)<=5}" th:each="greet : ${greetings}" th:text="${greet[0] + ' ' + greet[1]}">Hello, homepage!</h1>
+<h1 th:if="${#lists.size(greetings) > 5}">I think that's enough!</h1>
+
+
+</body>
+</html>
