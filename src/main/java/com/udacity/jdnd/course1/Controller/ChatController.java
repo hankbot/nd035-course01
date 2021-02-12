@@ -1,6 +1,9 @@
 package com.udacity.jdnd.course1.Controller;
 
-import com.udacity.jdnd.course1.*;
+import com.udacity.jdnd.course1.Model.ChatForm;
+import com.udacity.jdnd.course1.Model.ChatMessage;
+import com.udacity.jdnd.course1.Model.ChatMessageType;
+import com.udacity.jdnd.course1.Service.MessageService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

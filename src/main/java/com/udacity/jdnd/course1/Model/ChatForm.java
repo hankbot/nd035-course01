@@ -1,13 +1,10 @@
-package com.udacity.jdnd.course1;
+package com.udacity.jdnd.course1.Model;
 
-public class ChatMessage {
+public class ChatForm {
 
   private String username;
   private String message;
-  private ChatMessageType messageType;
-
-  public ChatMessage() {
-  }
+  private String messageType;
 
   public String getUsername() {
     return username;
@@ -25,11 +22,11 @@ public class ChatMessage {
     this.message = message;
   }
 
-  public ChatMessageType getMessageType() {
+  public String getMessageType() {
     return messageType;
   }
 
-  public void setMessageType(ChatMessageType messageType) {
+  public void setMessageType(String messageType) {
     this.messageType = messageType;
   }
 

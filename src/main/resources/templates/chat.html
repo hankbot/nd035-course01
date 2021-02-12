@@ -14,7 +14,7 @@
     <br /><br />
     <label for="messageType">Message Type: </label>
     <select th:field="*{messageType}" id="messageType">
-        <option th:each="messageType : ${T(com.udacity.jdnd.course1.ChatMessageType).values()}" th:value="${messageType.getDisplayValue()}" th:text="${messageType.getDisplayValue()}">displayValue</option>
+        <option th:each="messageType : ${T(com.udacity.jdnd.course1.Model.ChatMessageType).values()}" th:value="${messageType.getDisplayValue()}" th:text="${messageType.getDisplayValue()}">displayValue</option>
 <!--        <option selected>Say</option>-->
 <!--        <option>Shout</option>-->
 <!--        <option>Whisper</option>-->

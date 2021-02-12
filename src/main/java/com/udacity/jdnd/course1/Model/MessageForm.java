@@ -1,4 +1,4 @@
-package com.udacity.jdnd.course1;
+package com.udacity.jdnd.course1.Model;
 
 public class MessageForm {
 

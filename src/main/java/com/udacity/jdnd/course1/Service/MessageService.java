@@ -1,5 +1,6 @@
-package com.udacity.jdnd.course1;
+package com.udacity.jdnd.course1.Service;
 
+import com.udacity.jdnd.course1.Model.ChatMessage;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
